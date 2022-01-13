@@ -3,6 +3,8 @@ QORBLE
 
 A simple word guessing game, written in QBasic ([QB64](https://qb64.org/)), inspired by, but not affiliated with, [Wordle](https://www.powerlanguage.co.uk/wordle/).  
 
+![QORBLE Screenshot](docs/screenshot1.png)
+
 # Build this project
 
 This project can be built with [QB64](https://qb64.org).  Linux users might check out [this COPR repo](https://copr.fedorainfracloud.org/coprs/vwbusguy/qb64/) for a convenient way to install QB64.
