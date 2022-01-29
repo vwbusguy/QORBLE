@@ -131,10 +131,10 @@ WORDLIST$(123) = "RISKY"
 WORDLIST$(124) = "SPARK"
 
 
-
+MAIN:
+COLOR 7
+'Chose Word
 CHWORD$ = WORDLIST$(Int(Rnd * UBound(WORDLIST$)))
-
-
 'Set word
 Dim WORD As String * 5
 WORD$(0) = Mid$(CHWORD$, 1, 1)
@@ -142,14 +142,11 @@ WORD$(1) = Mid$(CHWORD$, 2, 1)
 WORD$(2) = Mid$(CHWORD$, 3, 1)
 WORD$(3) = Mid$(CHWORD$, 4, 1)
 WORD$(4) = Mid$(CHWORD$, 5, 1)
-
-
-MAIN:
 SUCCESS = 0
 GUESSES = 0
-Print "YOU HAVE FIVE TRIES"
+Print "YOU HAVE SIX TRIES"
 Print "GUESS A FIVE LETTER WORD: "
-While SUCCESS < 5 And GUESSES < 5
+While SUCCESS < 5 And GUESSES < 6
     Color 15
     Input ""; GUESS$
     GUESSES = GUESSES + 1
@@ -162,7 +159,15 @@ If SUCCESS = 5 Then
 Else
     Print "Sorry.  The word is "; CHWORD$
 End If
-foo$ = Input$(1)
+Print
+Print "Play Again? (Y/N)"
+Do
+    K$ = InKey$
+    If K$ = "y" Or K$ = "Y" Then
+        Cls
+        GoTo MAIN
+    End If
+Loop Until K$ <> ""
 System
 
 
