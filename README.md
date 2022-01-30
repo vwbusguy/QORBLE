@@ -15,4 +15,4 @@ To build the project on Linux or MacOS, clone and cd into this repository and ru
 
 Then run it:  `./qorble`
 
-This should also run fine on Windows, but the above command may need adjusted (qb64.exe, etc.)11
+This should also run fine on Windows, but the above command may need adjusted (qb64.exe, etc.). 
