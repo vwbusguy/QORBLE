@@ -1,7 +1,7 @@
 QORBLE
 ======
 
-A simple word guessing game, written in QBasic ([QB64](https://qb64.org/)), inspired by, but not affiliated with, [Wordle](https://www.powerlanguage.co.uk/wordle/).  
+A simple word guessing game, written in QBasic ([QB64](https://qb64.com/)), inspired by, but not affiliated with, [Wordle](https://www.powerlanguage.co.uk/wordle/).  
 
 ![QORBLE Screenshot](docs/screenshot1.png)
 
